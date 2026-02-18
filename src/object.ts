@@ -4,7 +4,7 @@ const dog={
     age:3
 }
 function printName(person:{first:string,last:string}):void{
-    console.log(`${person.first} ${person.last}`)
+    console.log(` singer is ${person.first} ${person.last}`)
 }
 
 printName({first:"Anurag",last:'Yadav'})
@@ -39,6 +39,7 @@ const sayMybirtshday=(person:person):void=>{
 
 }
 sayMybirtshday({name:"Anurag",age:20,isAlive:true,Address:"Sultanpur"})
+
 //Nested object
 
 const describePerson=(person:{

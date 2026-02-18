@@ -38,3 +38,39 @@ console.log(stuff);
 const num2:(number | string)[]=[1,"anurag","aloo"]//both type 
 console.log(num2);
 
+//Literal type
+
+let zero:0=0;
+let hi:"hi"="hi";
+const giveAnser=(answer:"yes"|"no"|"maybe")=>{
+    return `The Answer is ${answer}`;
+}
+console.log(giveAnser('no'));
+type days="monday"|"tuesday";
+const newdays:days="monday";
+console.log(newdays);
+
+//Excercise
+
+const highscore:number|boolean=false;
+
+const stuff3:number[]|string []=["1","2","3"];//either number or string
+type skilllevel="Begginer"|"Intermediate"|"Advance"|"Expert"
+
+type skiBoard={
+    name:string,
+    age:number,
+    soort:"ski"|"snowBoard";
+    level:"skillLevel"
+}
+type rgb={
+    r:number,
+    g:number,
+    b:number
+}
+type Hsl={
+    h:number;
+    s:number,
+    l:number
+}
+const color:(rgb | Hsl)[]=[{h:1,s:2,l:3}]

@@ -29,6 +29,7 @@ console.log(add(50));
 
 const rando = (num: number): string | number => {
     if(Math.random()>.5){
+        console.log(num.toString())
         return num.toString();
     }
     return num;
